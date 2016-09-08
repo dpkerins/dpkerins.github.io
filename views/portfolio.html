@@ -1,0 +1,17 @@
+<div appheader class="header"></div>
+<div class="content">
+	<div ng-repeat="project in projects" class="project-div">
+		<img class="project-image" src="{{ project.ImageSource }}">
+		<a href="#/{{$index}}">
+			<div class="project-info">
+				<h2>{{ project.Name }}</h2><br>
+				<h3>{{ project.Short_Summary }}</h3><br>
+				<h3>{{ project.Client }}</h3>
+			</div>
+		</a>
+	</div>
+</div>
+
+
+
+
