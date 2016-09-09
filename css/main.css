@@ -266,6 +266,16 @@ ul {
 		margin-right: 20%;
 	}
 }
+.resume-section {
+	flex: 1 100%;
+	background-color: #CCCCB2;
+	padding: 10px;
+}
+
+
+
+
+
 
 
 /*ADMIN STYLING*/

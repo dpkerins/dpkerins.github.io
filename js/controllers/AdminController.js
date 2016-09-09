@@ -32,7 +32,7 @@ app.controller('AdminController', ['$scope', '$firebaseObject', '$firebaseAuth',
 
 	$scope.obj = $firebaseObject(ref);
 	var portfolioList = $firebaseArray(ref.child('Portfolio'));
-	var schoolList = $firebaseArray(ref.child('Education'));
+	var schoolList = $firebaseArray(ref.child('Resume/Education'));
 
 	$scope.showSchoolAdder = false;
 	$scope.appendSchool = function() {
