@@ -283,6 +283,16 @@ ul {
 	border-bottom: 1px black dotted;
 	padding: 10px;
 }
+.education-section {
+	border: 1px solid black;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+.project-section {
+	border: 1px solid black;
+	padding: 5px;
+	margin-bottom: 5px;
+}
 .landing-input {
 	width: 80%;
 }

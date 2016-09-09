@@ -37,7 +37,7 @@
 				Activities: <input ng-model="school.Activities"></input><br><br>
 				Description: <input ng-model="school.Description"></input><br><br>
 			</div>
-			<div ng-show="showSchoolAdder">
+			<div ng-show="showSchoolAdder" class="education-section">
 				School: <input ng-model="schoolname"></input><span> Required</span><br><br>
 				Dates: <input ng-model="schoolstart"></input> - <input ng-model="schoolend"></input><span> Required</span><br><br>
 				Degree: <input ng-model="schooldegree"></input><span> Required</span><br><br>
@@ -60,7 +60,7 @@
 				Short Summary: <input ng-model="project.Short_Summary" type="text" class="project-input"></input><br><br>
 				Long Summary: <input ng-model="project.Long_Summary" type="text" class="project-input"></input><br><br><br><br>
 			</div>
-			<div ng-show="showProjectAdder">
+			<div ng-show="showProjectAdder" class="project-section">
 				Project Name: <input ng-model="projectname" type="text" class="project-input new-name"></input><br><br>
 				Image Source: <input ng-model="projectimage" type="text" class="project-input new-image"></input><br><br>
 				Client Name: <input ng-model="projectclient" type="text" class="project-input new-client"></input><br><br>
