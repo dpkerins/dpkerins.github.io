@@ -268,8 +268,14 @@ ul {
 }
 .resume-section {
 	flex: 1 100%;
+}
+.resume-education {
 	background-color: #CCCCB2;
 	padding: 10px;
+	border-radius: 7px;
+	border: 1px solid gray;
+	width: 90%;
+	margin: auto;
 }
 
 
