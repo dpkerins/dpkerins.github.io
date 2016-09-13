@@ -33,20 +33,42 @@ app.controller('AdminController', ['$scope', '$firebaseObject', '$firebaseAuth',
 	$scope.obj = $firebaseObject(ref);
 	var portfolioList = $firebaseArray(ref.child('Portfolio'));
 	var schoolList = $firebaseArray(ref.child('Resume/Education'));
+	var jobList = $firebaseArray(ref.child('Resume/Work'));
+
+	$scope.showJobAdder = false;
+	$scope.appendJob = function(){
+		$scope.showJobAdder = true;
+	};
 
 	$scope.showSchoolAdder = false;
 	$scope.appendSchool = function() {
 		$scope.showSchoolAdder = true;
-	}
+	};
 
 	$scope.showProjectAdder = false;
 	$scope.appendProject = function() {
 		$scope.showProjectAdder = true;
-	}
+	};
+
+	$scope.saveNewJob = function() {
+		$firebaseArray(ref).$save('Work');
+		var newJobObject = {
+			'Title' : $scope.jobtitle,
+			'Company' : $scope.jobcompany,
+			'Place' : $scope.jobplace,
+			'Description' : $scope.jobdescription
+		};
+		jobList.$add(newJobObject);
+		$scope.jobtitle = null;
+		$scope.jobcompany = null;
+		$scope.jobplace = null;
+		$scope.jobdescription = null;
+		$scope.showJobAdder = false;
+	};
 
 
 	$scope.saveNewProject = function() {
-		$firebaseArray(ref).$save('Education');
+		$firebaseArray(ref).$save('Portfolio');
 		var newProjectObject = {
 			'Client' : $scope.projectclient,
 			'ImageSource' : $scope.projectimage,
@@ -68,7 +90,7 @@ app.controller('AdminController', ['$scope', '$firebaseObject', '$firebaseAuth',
 	$scope.schooldescription = null;
 
 	$scope.saveNewSchool = function() {
-		$firebaseArray(ref).$save('Portfolio');
+		$firebaseArray(ref).$save('Education');
 		var newSchoolObject = {
 			'Name' : $scope.schoolname,
 			'Start' : $scope.schoolstart,

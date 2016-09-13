@@ -24,6 +24,22 @@
 	</div>
 	<div class="admin-section">
 		<h4>WORK HISTORY</h4>
+		<div class="all-work">
+			<div ng-repeat="job in obj.Resume.Work" class="work-section">
+				Title: <input ng-model="job.Title"></input><br><br>
+				Company: <input ng-model="job.Company"></input><br><br>
+				Place: <input ng-model="job.Place"></input><br><br><br>
+				Description: <input ng-model="job.Description"></input><br>
+			</div>
+			<div ng-show="showJobAdder" class="work-section">
+				Title: <input ng-model=jobtitle></input><br><br>
+				Company: <input ng-model="jobcompany"></input><br><br>
+				Place: <input ng-model="jobplace"></input><br><br>
+				Description: <input ng-model="jobdescription"></input><br><br>
+				<input type="button" ng-click="saveNewJob()" value="SAVE THIS NEW JOB"></input>
+			</div>
+			<input type="button" value="New Job" ng-click="appendJob()"></input>
+		</div>
 	</div>
 	<div class="admin-section">
 		<h4>EDUCATION</h4>

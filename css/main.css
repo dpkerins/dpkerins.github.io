@@ -275,7 +275,15 @@ ul {
 	border-radius: 7px;
 	border: 1px solid gray;
 	width: 90%;
-	margin: auto;
+	margin: 10px auto;
+}
+.resume-work {
+	background-color: #CCCCB2;
+	padding: 10px;
+	border-radius: 7px;
+	border: 1px solid gray;
+	width: 90%;
+	margin: 10px auto;
 }
 
 
@@ -305,6 +313,11 @@ ul {
 	margin-bottom: 5px;
 }
 .project-section {
+	border: 1px solid black;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+.work-section {
 	border: 1px solid black;
 	padding: 5px;
 	margin-bottom: 5px;
