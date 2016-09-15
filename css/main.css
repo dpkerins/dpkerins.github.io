@@ -102,7 +102,7 @@ ul {
 .main-container {
 	height: 100%;
 	width: 100%;
-	background-image: url('../img/grass_rock_pattern.jpeg');
+	background-image: url('../img/desk.jpeg');
 	background-size: cover;
 	display: -webkit-flex;
 	display: flex;
