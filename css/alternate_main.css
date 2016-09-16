@@ -9,7 +9,8 @@ body {
     padding: 0;
 	color: black;
 	font-family: Raleway;
-	background-color: rgba(248, 248, 255, 0.5);
+	background-color: rgba(248, 248, 255, 0.5)
+
 }
 /* FONT*/
 h1 {
@@ -19,7 +20,7 @@ h1 {
 	font-variant: normal;
 	font-weight: 500;
 	line-height: 26.4px;
-	color: white;
+	color: black;
 	display: inline-block;
 }
 h2 {
@@ -29,7 +30,7 @@ h2 {
 	font-variant: normal;
 	font-weight: 500;
 	line-height: 20px;
-	color: rgba(46, 46, 10, 1.0);
+	color: black;
 	display: inline-block;
 }
 h3 {
@@ -39,7 +40,7 @@ h3 {
 	font-variant: normal;
 	font-weight: 500;
 	line-height: 15.4px;
-	color: white;
+	color: black;
 	display: inline-block;
 }
 p {
@@ -104,6 +105,7 @@ ul {
 	width: 100%;
 	background-image: url('../img/desk.jpg');
 	background-size: cover;
+	background-color: black;
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
@@ -129,9 +131,9 @@ ul {
 	flex: 1 100%;
 	height: auto;
 	padding: 0;
-	background: #CCCCB2; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #CCCCB2 , #757519); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(#757519, #CCCCB2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: rgba(0, 0, 0, 0.1); /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, rgba(0, 0, 0, 0.1) , rgba(0, 0, 0, 0.9)); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	border-bottom: black solid 1px;
 }
 .header-interior {
@@ -175,7 +177,7 @@ ul {
 	border-radius: 10px;
 }
 .link-div {
-	background-color: #CCCCB2;
+	background-color: rgba(0, 0, 0, 0.1);
 	border: 1px solid gray;
 	margin-left: 10%;
 	margin-right: 10%;
@@ -193,6 +195,10 @@ ul {
 	flex-flow: row wrap;
 	justify-content: space-around;
 	align-items: center;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+.project-div:nth-child(even) {
+	background-color: transparent;
 }
 .project-image {
 	width: 300px;
@@ -205,8 +211,6 @@ ul {
 .project-info {
 	height: 280px;
 	width: 280px;
-	border: 1px solid gray;
-	background-color: #CCCCB2;
 	padding: 10px;
 	border-radius: 7px;
 	margin-top: 10px;
@@ -220,10 +224,14 @@ ul {
 .basic-info {
 	flex: 1 100%;
 	margin-top: 15px;
+	background-color: transparent;
 }
 .more-info {
 	flex: 1 100%;
 	margin-top: 15px;
+}
+.more-info:nth-child(odd) {
+	background-color: rgba(0, 0, 0, 0.1);
 }
 .pic-div {
 	border-radius: 7px;
@@ -238,7 +246,7 @@ ul {
 }
 .profile-div {
 	border: 1px solid gray;
-	background-color: #CCCCB2;
+	background-color: rgba(0, 0, 0, 0.1);
 	padding: 10px;
 	border-radius: 7px;
 	border-radius: 7px;
@@ -246,11 +254,7 @@ ul {
 	margin-right: 10%;
 }
 .info-div {
-	border: 1px solid gray;
-	background-color: #CCCCB2;
 	padding: 10px;
-	border-radius: 7px;
-	border-radius: 7px;
 	flex: 1 100%;
 	margin-left: 10%;
 	margin-right: 10%;
@@ -268,22 +272,16 @@ ul {
 }
 .resume-section {
 	flex: 1 100%;
+	text-align: center;
 }
-.resume-education {
-	background-color: #CCCCB2;
+.resume-div {
+	background-color: rgba(0, 0, 0, 0.1);
 	padding: 10px;
-	border-radius: 7px;
-	border: 1px solid gray;
-	width: 90%;
-	margin: 10px auto;
+	width: 100%-10px;
+	text-align: right;
 }
-.resume-work {
-	background-color: #CCCCB2;
-	padding: 10px;
-	border-radius: 7px;
-	border: 1px solid gray;
-	width: 90%;
-	margin: 10px auto;
+.resume-section:nth-child(even) .resume-div {
+	text-align: left;
 }
 .resume-section-heading {
 	margin-left: 10px;

@@ -2,7 +2,7 @@
 <div class="content">
 	<div class="resume-section">
 		<h2 class="resume-section-heading">WORK HISTORY</h2>
-		<div class="resume-work" ng-repeat="job in resume.Work">
+		<div class="resume-div" ng-repeat="job in resume.Work">
 			<h2>{{ job.Title }}</h2><br>
 			<h3>{{ job.Company }}</h3><br>
 			<h3>{{ job.Place }}</h3><br>
@@ -11,7 +11,7 @@
 	</div>
 	<div class="resume-section">
 		<h2 class="resume-section-heading">EDUCATION</h2>
-		<div class="resume-education" ng-repeat="school in resume.Education">
+		<div class="resume-div" ng-repeat="school in resume.Education">
 			<h2>{{ school.Name }}</h2><br>
 			<h3>{{ school.Start }}-{{ school.End }}</h3><br>
 			<h3>{{ school.Degree }}</h3><br>
