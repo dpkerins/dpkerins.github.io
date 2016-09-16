@@ -91,6 +91,9 @@ ul {
 	list-style: none;
 	margin: 0;
 }
+.hidden {
+	display: none;
+}
 .app-container {
 	height: 100%;
 	padding: 0;
@@ -101,6 +104,7 @@ ul {
 	background-image: url('../img/desk.jpg');
 	background-size: cover;
 	position: relative;
+	text-align: center;
 }
 .overlay {
 	height: 100%;
@@ -124,11 +128,16 @@ ul {
 	color: white;
 	opacity: 1.0;
 }
+.arrow-img {
+	position: absolute;
+	bottom: 10px;
+}
 .main-div {
 	height: 35%;
 	width: 100%;
 	text-align: center;
 	position: relative;
+	padding: 10px;
 }
 .main-div:nth-child(odd){
 	background: rgba(0, 0, 0, 0.1);
@@ -142,7 +151,7 @@ ul {
 	width: 100%;
 	height: 10%;
 	padding: 0;
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(0, 0, 0, 0.7);
 	position: fixed;
 	top: 0;
 	z-index: 700;
@@ -186,7 +195,8 @@ ul {
 	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 10px;
 }
 .social-pic {
 	height: 50px;
