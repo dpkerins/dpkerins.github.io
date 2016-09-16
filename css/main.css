@@ -143,9 +143,8 @@ ul {
 	background: rgba(0, 0, 0, 0.1);
 }
 .category-page-link {
-	position: absolute;
-	bottom: 5px;
-	right: 5px;
+	margin: 0 auto;
+	border: 1px solid black;
 }
 .header {
 	width: 100%;
