@@ -1,23 +1,26 @@
 <div appheader class="header"></div>
-<div class="content">
-	<div class="main-container" ng-mouseenter="arrowHover=true" ng-mouseleave="arrowHover=false">
-		<div class="overlay"></div>
-		<div class="welcome-div">
-			<h1>{{ welcomePage.Introduction }}</h1><br>
-		</div>
-		<a scroll-to="firstMainDiv" target="_self" ng-show="arrowHover"><img class="arrow-img" src="img/arrow.png"></a>
+<div class="main-container">
+	<div class="overlay"></div>
+	<div class="welcome-div">
+		<h1>{{ welcomePage.Introduction }}</h1><br>
 	</div>
+	<a><img class="arrow-img" src="img/arrow.png"></a>
+</div>
+<div class="main-content">
 	<div id="firstMainDiv" class="main-div">
-		<h2>ABOUT ME</h2>
-		<a href="#/aboutme"><h3 class="category-page-link">More About Me...</h3></a>
+		<div><h2>ABOUT ME</h2></div>
+		<div></div>
+		<div><a href="#/aboutme"><h3 class="category-page-link">More About Me...</h3></a></div>
 	</div>
 	<div class="main-div">
-		<h2>PORTFOLIO</h2>
-		<a href="#/portfolio/"><h3 class="category-page-link">More Portfolio...</h3></a>
+		<div><h2>PORTFOLIO</h2></div>
+		<div></div>
+		<div><a href="#/portfolio/"><h3 class="category-page-link">More Portfolio...</h3></a></div>
 	</div>
 	<div class="main-div">
-		<h2>RESUME</h2>
-		<a href="#/resume"><h3 class="category-page-link">More Portfolio...</h3></a>
+		<div><h2>RESUME</h2></div>
+		<div></div>
+		<div><a href="#/resume"><h3 class="category-page-link">More Portfolio...</h3></a></div>
 	</div>
 	<div class="footer">
 	  <div class="footer-item social-links">
@@ -26,3 +29,4 @@
 	  </div>
 	</div>
 </div>
+

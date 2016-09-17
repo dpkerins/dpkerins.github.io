@@ -73,18 +73,6 @@ a {
 	margin-right: 5px;
 	text-decoration: none;
 }
-a h1:hover {
-	color: black;
-	font-weight: 700;
-}
-a h2:hover {
-	color: black;
-	font-weight: 700;
-}
-a h3:hover {
-	color: black;
-	font-weight: 700;
-}
 img {
 }
 ul {
@@ -97,14 +85,14 @@ ul {
 .app-container {
 	height: 100%;
 	padding: 0;
+	display: relative;
 }
 .main-container {
 	height: 100%;
 	width: 100%;
 	background-image: url('../img/desk.jpg');
 	background-size: cover;
-	position: relative;
-	text-align: center;
+	flex: 1 100%;
 }
 .overlay {
 	height: 100%;
@@ -128,23 +116,32 @@ ul {
 	color: white;
 	opacity: 1.0;
 }
-.arrow-img {
+.main-container a{
+	width: 100%;
+	text-align: center;
+	bottom: 5px;
 	position: absolute;
-	bottom: 10px;
+}
+.arrow-img {
 }
 .main-div {
-	height: 35%;
+	min-height: 300px;
 	width: 100%;
 	text-align: center;
 	position: relative;
-	padding: 10px;
+	display: -webkit-flex;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
 }
 .main-div:nth-child(odd){
 	background: rgba(0, 0, 0, 0.1);
 }
+.main-div div{
+	flex: 1 100%;
+}
 .category-page-link {
-	margin: 0 auto;
-	border: 1px solid black;
 }
 .header {
 	width: 100%;
@@ -172,14 +169,35 @@ ul {
 .header h1 {
 	color: white;
 }
+.main-content {
+	width: 100%;
+	display: -webkit-flex;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: center;
+	position: absolute;
+	top: 100%;
+}
 .content {
+	min-height: 90%;
+	width: 100%;
+	display: -webkit-flex;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: center;
+	position: absolute;
+	top: 10%;
+}
+.menu-content {
 	height: 90%;
 	width: 100%;
 	display: -webkit-flex;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	align-items: center;
+	align-content: stretch;
 	position: absolute;
 	top: 10%;
 }
@@ -187,8 +205,8 @@ ul {
 	flex: 1 100%;
 }
 .footer {
-	color: white;
 	flex: 1 100%;
+	color: white;
 	display: -webkit-flex;
 	display: flex;
 	flex-flow: row wrap;
@@ -196,19 +214,23 @@ ul {
 	align-items: center;
 	background-color: rgba(0, 0, 0, 0.7);
 	padding: 10px;
+	height: 10%-20px;
 }
 .social-pic {
 	height: 50px;
 	width: 50px;
 	border-radius: 10px;
+	margin: 5px;
 }
 .link-div {
+	height: 100%;
+	width: 100%;
 	background-color: rgba(0, 0, 0, 0.1);
 	border: 1px solid gray;
-	margin-left: 10%;
-	margin-right: 10%;
-	padding: 10px;
-	border-radius: 7px;
+	text-align: center;
+}
+.link-div h1{
+	color: white;
 }
 .footer-item {
 	margin-left: 10%;
@@ -245,6 +267,18 @@ ul {
 @media (min-width: 600px) {
 	.project-div:nth-child(even){
 		/*flex-direction: row-reverse;*/
+	}
+	a h1:hover {
+		color: black;
+		font-weight: 700;
+	}
+	a h2:hover {
+		color: black;
+		font-weight: 700;
+	}
+	a h3:hover {
+		color: black;
+		font-weight: 700;
 	}
 }
 .basic-info {
