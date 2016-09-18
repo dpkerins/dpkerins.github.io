@@ -203,6 +203,11 @@ ul {
 }
 .menu-item {
 	flex: 1 100%;
+	position: relative;
+	margin-bottom: 5px;
+}
+.menu-item:last-child{
+	margin-bottom: 0;
 }
 .footer {
 	flex: 1 100%;
@@ -225,12 +230,23 @@ ul {
 .link-div {
 	height: 100%;
 	width: 100%;
-	background-color: rgba(0, 0, 0, 0.1);
-	border: 1px solid gray;
 	text-align: center;
+	position: absolute;
 }
 .link-div h1{
 	color: white;
+}
+.portfolio-menu-item {
+	background-image: url('../img/graphic.jpg');
+	background-size: cover;
+}
+.resume-menu-item {
+	background-image: url('../img/resume_img.jpg');
+	background-size: cover;
+}
+.about-menu-item {
+	background-image: url('../img/corgies.jpg');
+	background-size: cover;
 }
 .footer-item {
 	margin-left: 10%;
@@ -305,11 +321,7 @@ ul {
 	border: black solid 1px;
 }
 .profile-div {
-	border: 1px solid gray;
-	background-color: rgba(0, 0, 0, 0.1);
 	padding: 10px;
-	border-radius: 7px;
-	border-radius: 7px;
 	margin-left: 10%;
 	margin-right: 10%;
 }
