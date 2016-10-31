@@ -55,11 +55,13 @@ app.controller('AdminController', ['$scope', '$firebaseObject', '$firebaseAuth',
 		var newJobObject = {
 			'Title' : $scope.jobtitle,
 			'Company' : $scope.jobcompany,
+			'Date' : $scope.jobDate,
 			'Place' : $scope.jobplace,
 			'Description' : $scope.jobdescription
 		};
 		jobList.$add(newJobObject);
 		$scope.jobtitle = null;
+		$scope.jobDate = null;
 		$scope.jobcompany = null;
 		$scope.jobplace = null;
 		$scope.jobdescription = null;

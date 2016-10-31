@@ -16,23 +16,23 @@
 			<h4>PERSONAL INFO</h4>
 			First Name: <input ng-model="obj.AboutMe.PersonalInfo.FirstName" type="text" class="personal-input"></input>
 			Last Name: <input ng-model="obj.AboutMe.PersonalInfo.LastName" type="text" class="personal-input"></input>
-			Age: <input ng-model="obj.AboutMe.PersonalInfo.Age" type="text" class="personal-input"></input>
+			Age: <input ng-model="obj.AboutMe.PersonalInfo.Age" type="text" class="personal-input"></input><br><br>
+			More Info: <textarea></textarea>
 		</form>
-	</div>
-	<div class="admin-section">
-		<h4>RESUME</h4>
 	</div>
 	<div class="admin-section">
 		<h4>WORK HISTORY</h4>
 		<div class="all-work">
 			<div ng-repeat="job in obj.Resume.Work" class="work-section">
 				Title: <input ng-model="job.Title"></input><br><br>
+				Date: <input ng-model="job.Date"></input><br><br>
 				Company: <input ng-model="job.Company"></input><br><br>
 				Place: <input ng-model="job.Place"></input><br><br><br>
 				Description: <input ng-model="job.Description"></input><br>
 			</div>
 			<div ng-show="showJobAdder" class="work-section">
 				Title: <input ng-model=jobtitle></input><br><br>
+				Date: <input ng-model="jobDate"></input><br><br>
 				Company: <input ng-model="jobcompany"></input><br><br>
 				Place: <input ng-model="jobplace"></input><br><br>
 				Description: <input ng-model="jobdescription"></input><br><br>
@@ -87,11 +87,6 @@
 		</div>
 		<input type="button" value="New Project" ng-click="appendProject()"></input>
 	</div>
-
-	<div class="admin-section">
-		<h4>FEEDBACK</h4>
-	</div>
-
 	<div class="admin-section">
 		<h4>SOCIAL MEDIA</h4>
 		Instagram: <input ng-model="obj.Social_Media.Instagram" type="text" class="social-input"></input><br><br>
