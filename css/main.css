@@ -66,6 +66,7 @@ pre {
 	font-variant: normal;
 	font-weight: 400;
 	line-height: 18.5714px;
+	white-space: pre-wrap;
 }
 /*END OF FONT*/
 a {
@@ -261,20 +262,24 @@ ul {
 	flex-flow: row wrap;
 	justify-content: space-around;
 	align-items: center;
-	background-color: rgba(0, 0, 0, 0.1);
 }
-.project-div:nth-child(even) {
-	background-color: transparent;
-}
-.single-project-div {
+.project-slideshow {
+	border-radius: 7px;
+	border: 1px solid gray;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	overflow-x: scroll;
 	flex: 1 100%;
 	display: -webkit-flex;
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: row;
 	justify-content: space-around;
 	align-items: center;
-	background-color: rgba(0, 0, 0, 0.1);
-	height: 100%;
+}
+.project-slide {
+	width: 300px;
+	margin: 0 5px;
+	display: inline-block;
 }
 .project-image {
 	width: 300px;

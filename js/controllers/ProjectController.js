@@ -6,5 +6,8 @@ app.controller('ProjectController', ['$scope', '$routeParams', '$firebaseArray',
 		.then(function(){
 			key = $scope.projects.$keyAt(index);
 			$scope.currentProject = $scope.projects.$getRecord(key);
+
 		});
+
+
 }]);

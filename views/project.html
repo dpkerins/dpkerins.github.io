@@ -1,17 +1,18 @@
 <div class="content">
-	<div class="single-project-div">
-		<div class="project-info">
-			<h2>{{ currentProject.Name }}</h2><br>
-			<h3>{{ currentProject.Client }}</h3><br>
-			<pre>{{ currentProject.Long_Summary }}</pre>
-		</div>
+	<div class="project-slideshow">
+		<img class="project-slide" ng-repeat="img in currentProject.Images" src="{{ img }}">
 	</div>
-	<div class="footer">
-	  <div class="footer-item social-links">
-	  	<a href="https://www.instagram.com/diggerous/" target="_blank"><img class="social-pic" src="img/Instagram_Logo.png"></a>
-	  	<a href="https://twitter.com/douglaskerins" target="_blank"><img class="social-pic" src="img/Twitter_Logo.png"></a>
-	  </div>
+	<div class="project-info">
+		<h2>{{ currentProject.Name }}</h2><br>
+		<h3>{{ currentProject.Client }}</h3><br>
+		<pre>{{ currentProject.Long_Summary }}</pre>
 	</div>
+</div>
+<div class="footer">
+  <div class="footer-item social-links">
+  	<a href="https://www.instagram.com/diggerous/" target="_blank"><img class="social-pic" src="img/Instagram_Logo.png"></a>
+  	<a href="https://twitter.com/douglaskerins" target="_blank"><img class="social-pic" src="img/Twitter_Logo.png"></a>
+  </div>
 </div>
 
 
