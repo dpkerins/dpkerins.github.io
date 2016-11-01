@@ -271,6 +271,7 @@ ul {
 	overflow-x: scroll;
 	flex: 1 100%;
 	width: 100%;
+	height: 400px;
 }
 .project-slide {
 	width: 300px;
