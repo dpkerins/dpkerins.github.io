@@ -275,6 +275,7 @@ ul {
 	flex-flow: row;
 	justify-content: space-around;
 	align-items: center;
+	width: 100%;
 }
 .project-slide {
 	width: 300px;
