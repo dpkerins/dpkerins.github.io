@@ -1,6 +1,6 @@
 <div class="content">
 	<div class="project-slideshow">
-		<img class="project-slide" ng-repeat="img in currentProject.Images" src="{{ img }}">
+		<div class="project-slide" ng-repeat="img in currentProject.Images" style="background: url('{{ img }}'); background-position: center; background-size: cover"></div>
 	</div>
 	<div class="project-info">
 		<h2>{{ currentProject.Name }}</h2><br>
