@@ -270,11 +270,6 @@ ul {
 	margin-bottom: 10px;
 	overflow-x: scroll;
 	flex: 1 100%;
-	display: -webkit-flex;
-	display: flex;
-	flex-flow: row;
-	justify-content: space-around;
-	align-items: center;
 	width: 100%;
 }
 .project-slide {
