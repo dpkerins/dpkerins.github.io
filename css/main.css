@@ -278,6 +278,7 @@ ul {
 }
 .project-slide {
 	width: 300px;
+	height: 300px;
 	margin: 0 5px;
 	display: inline-block;
 }
