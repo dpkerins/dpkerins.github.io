@@ -365,9 +365,6 @@ ul {
 	width: 100%-10px;
 	text-align: right;
 }
-.resume-section:nth-child(even) .resume-div {
-	text-align: left;
-}
 .resume-section-heading {
 	margin-left: 10px;
 }
