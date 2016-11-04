@@ -171,6 +171,7 @@ ul {
 	color: white;
 }
 .main-content {
+	min-height: calc(100% - 50px);
 	width: 100%;
 	display: -webkit-flex;
 	display: flex;
@@ -256,12 +257,18 @@ ul {
 	margin-right: 10%;
 }
 .project-div {
+	display: block;
+	width: 100%;
 	flex: 1 100%;
 	display: -webkit-flex;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
 	align-items: center;
+	margin: 0;
+}
+.project-div:hover {
+	border: 2px solid black;
 }
 .project-slideshow {
 	border-radius: 7px;
@@ -297,9 +304,6 @@ ul {
 	margin-bottom: 10px;
 }
 @media (min-width: 600px) {
-	.project-div:nth-child(even){
-		/*flex-direction: row-reverse;*/
-	}
 	a h1:hover {
 		color: black;
 		font-weight: 700;
