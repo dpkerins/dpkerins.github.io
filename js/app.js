@@ -111,10 +111,6 @@ angular.module('ngScrollTo')
         templateUrl: 'views/admin.html',
         controller: 'AdminController'
       })
-      .when('/:id', {
-        templateUrl: 'views/project.html',
-        controller: 'ProjectController'
-      })
       .otherwise({
         redirectTo: '/'
       })

@@ -1,14 +1,11 @@
 <div appheader class="header"></div>
 <div class="content">
-	<a href="#/{{$index}}" ng-repeat="project in projects" class="project-div">
-		<!-- <div ng-repeat="project in projects" class="project-div"> -->
-			<img class="project-image" src="{{ project.ImageSource }}">
-			<div class="project-info">
-				<h2>{{ project.Name }}</h2><br>
-				<h3>{{ project.Short_Summary }}</h3><br>
-				<h3>{{ project.Client }}</h3>
-			</div>
-		<!-- </div> -->
+		<div class="project-image" style='background-image:url=({{ project.ImageSource }})"'></div>
+		<div class="project-info">
+			<h2>{{ project.Name }}</h2><br>
+			<h3>{{ project.Client }}</h3>
+			<h3>{{ project.Long_Summary }}</h3><br>
+		</div>
 	</a>
 </div>
 <div class="footer">
