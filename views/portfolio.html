@@ -1,12 +1,13 @@
 <div appheader class="header"></div>
 <div class="content">
+	<div ng-repeat="project in projects" class="project-div">
 		<div class="project-image" style='background-image:url=({{ project.ImageSource }})"'></div>
 		<div class="project-info">
 			<h2>{{ project.Name }}</h2><br>
 			<h3>{{ project.Client }}</h3>
 			<h3>{{ project.Long_Summary }}</h3><br>
 		</div>
-	</a>
+	</div>
 </div>
 <div class="footer">
   <div class="footer-item social-links">
