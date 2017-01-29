@@ -285,7 +285,7 @@ ul {
 	display: inline-block;
 }
 .project-image {
-	width: 500;
+	width: 500px;
 	height: 300px;
 	border-radius: 7px;
 	border: 1px solid gray;
