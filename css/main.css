@@ -94,7 +94,6 @@ ul {
 	background-image: url('../img/desk.jpg');
 	background-size: cover;
 	position: relative;
-	top: 50px;
 }
 .overlay {
 	height: 100%;
@@ -179,7 +178,6 @@ ul {
 	justify-content: center;
 	align-content: center;
 	position: relative;
-	top: 50px;
 }
 .content {
 	min-height: calc(100% - 50px);
@@ -223,7 +221,6 @@ ul {
 	padding: 10px;
 	height: 10%-20px;
 	position: relative;
-	top: 50px;
 }
 .social-pic {
 	height: 50px;
