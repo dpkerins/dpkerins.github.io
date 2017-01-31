@@ -284,14 +284,16 @@ ul {
 	margin: 0 5px;
 	display: inline-block;
 }
-.project-image {
+.project-image-div {
 	width: 400px;
 	height: 200px;
 	border-radius: 7px;
 	border: 1px solid gray;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	background-size: 100% auto;
+}
+.project-image {
+	width: 100%;
 }
 .project-info {
 	height: 280px;
