@@ -264,9 +264,6 @@ ul {
 	align-items: center;
 	margin: 0;
 }
-.project-div:hover {
-	border: 2px solid black;
-}
 .project-slideshow {
 	border-radius: 7px;
 	border: 1px solid gray;
