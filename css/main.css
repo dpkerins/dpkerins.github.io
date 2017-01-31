@@ -285,8 +285,8 @@ ul {
 	display: inline-block;
 }
 .project-image {
-	width: 500px;
-	height: 300px;
+	width: 400px;
+	height: 200px;
 	border-radius: 7px;
 	border: 1px solid gray;
 	margin-top: 10px;
