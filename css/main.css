@@ -237,6 +237,9 @@ ul {
 	height: 10%-20px;
 	position: relative;
 }
+.footer h2 {
+	display: block;
+}
 .social-pic {
 	height: 50px;
 	width: 50px;
