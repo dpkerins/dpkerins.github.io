@@ -364,7 +364,7 @@ ul {
 	text-align: left;
 }
 .resume-date {
-	align-self: right;
+	right: 0px;
 }
 .resume-section-heading {
 	margin-left: 10px;
