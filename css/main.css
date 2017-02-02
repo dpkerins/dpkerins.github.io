@@ -157,8 +157,11 @@ ul {
 	flex-direction: row;
 }
 .header-link {
-	vertical-align: middle;
+	text-align: center;
 	flex: 1;
+}
+.header-link:first-child {
+	text-align: left;
 }
 .header-link:last-child {
 	text-align: right;
@@ -364,7 +367,7 @@ ul {
 	text-align: left;
 }
 .resume-date {
-	
+
 }
 .resume-section-heading {
 	margin-left: 10px;
