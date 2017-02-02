@@ -152,9 +152,24 @@ ul {
 .header-interior {
 	height: 100%;
 	width: 100%;
+}
+.mobile-header-interior {
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: row;
+}
+.computer-header-interior {
+	display: none;
+}
+@media (min-width: 600px) {
+	.mobile-header-interior {
+		display: none;
+	}
+	.computer-header-interior {
+		display: -webkit-flex;
+		display: flex;
+		flex-direction: row;
+	}
 }
 .header-link {
 	text-align: center;
