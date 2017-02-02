@@ -363,6 +363,9 @@ ul {
 	width: 100%-10px;
 	text-align: left;
 }
+.resume-date {
+	float: right;
+}
 .resume-section-heading {
 	margin-left: 10px;
 }
