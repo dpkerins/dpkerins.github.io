@@ -225,7 +225,7 @@ ul {
 	margin-bottom: 0;
 }
 .footer {
-	width: 100% - 20px;
+	width: 100%;
 	color: white;
 	display: -webkit-flex;
 	display: flex;
@@ -233,8 +233,6 @@ ul {
 	justify-content: center;
 	align-items: center;
 	background-color: rgba(0, 0, 0, 0.7);
-	padding: 10px;
-	height: 10%-20px;
 	position: relative;
 	text-align: center;
 }
