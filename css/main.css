@@ -237,6 +237,10 @@ ul {
 	height: 10%-20px;
 	position: relative;
 }
+.footer div {
+	flex: 1 100%;
+}
+
 .footer h2 {
 	display: block;
 }
